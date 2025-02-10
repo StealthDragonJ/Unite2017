@@ -270,6 +270,8 @@ GameObject:
   m_Component:
   - component: {fileID: 981755110}
   - component: {fileID: 981755111}
+  - component: {fileID: 981755113}
+  - component: {fileID: 981755112}
   m_Layer: 0
   m_Name: Movement
   m_TagString: Untagged
@@ -309,7 +311,47 @@ MonoBehaviour:
     ConstantValue: 0
     Variable: {fileID: 11400000, guid: 6a29a5dcb4a8a7c4db8df34e78951dc0, type: 2}
   currMoveDirection: {fileID: 11400000, guid: ced49cddce80ffe4580cf4e13f77077b, type: 2}
+  movementOutput: {fileID: 11400000, guid: 2cf1b9772e48a504887c81f1a63911ae, type: 2}
+  rb: {fileID: 0}
+--- !u!114 &981755112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981755109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cd3a3fbf15dff4489e36cae028f7eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocityToApply: {fileID: 11400000, guid: cafe5529492babb43ac3ba8772a424d1, type: 2}
   rb: {fileID: 1468009732}
+--- !u!114 &981755113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981755109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe4359662a42ce4090e712c96b8e874, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Vector3: {fileID: 11400000, guid: cafe5529492babb43ac3ba8772a424d1, type: 2}
+  X:
+    UseConstant: 0
+    ConstantValue: 0
+    Variable: {fileID: 11400000, guid: 2cf1b9772e48a504887c81f1a63911ae, type: 2}
+  Y:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
+  Z:
+    UseConstant: 1
+    ConstantValue: 0
+    Variable: {fileID: 0}
 --- !u!1 &1468009725
 GameObject:
   m_ObjectHideFlags: 0

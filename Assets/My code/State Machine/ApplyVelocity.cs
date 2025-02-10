@@ -5,11 +5,9 @@ using RoboRyanTron.Unite2017.Variables;
 
 namespace RoboRyanTron.Unite2017
 {
-    public class MovementTest : MonoBehaviour
+    public class ApplyVelocity : MonoBehaviour
     {
-        public FloatReference moveSpeed;
-
-        public FloatVariable currMoveDirection;
+        public Vector3Variable velocityToApply;
 
         public Rigidbody rb;
 
@@ -27,9 +25,7 @@ namespace RoboRyanTron.Unite2017
 
         private void FixedUpdate()
         {
-            float movement = currMoveDirection.Value * moveSpeed.Value;
-
-            rb.velocity = new Vector3(movement, 0f, 0f);
+            rb.velocity = velocityToApply.Value;
         }
     }
 }
