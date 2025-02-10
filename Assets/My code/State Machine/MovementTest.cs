@@ -38,5 +38,10 @@ namespace RoboRyanTron.Unite2017
                 rb.velocity = new Vector3(movement, 0f, 0f);
             }
         }
+
+        public void LogTest()
+        {
+            Debug.Log("test");
+        }
     }
 }
