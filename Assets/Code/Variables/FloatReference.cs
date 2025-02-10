@@ -6,6 +6,7 @@
 // ----------------------------------------------------------------------------
 
 using System;
+using UnityEngine;
 
 namespace RoboRyanTron.Unite2017.Variables
 {
